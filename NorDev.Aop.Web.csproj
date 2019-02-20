@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="NLog" Version="4.5.11" />
+    <PackageReference Include="Unity" Version="5.8.13" />
+    <PackageReference Include="Unity.Configuration" Version="5.2.5" />
+    <PackageReference Include="Unity.Interception" Version="5.5.6" />
+    <PackageReference Include="Unity.Interception.Configuration" Version="5.1.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="NLog.Config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="unity.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>
